@@ -4,6 +4,7 @@
   <artifactId>filtroImagemBinaria</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
+  	<!-- Transformacoes na dimensao da imagem -->
   	<dependency>
     	<groupId>org.imgscalr</groupId>
     	<artifactId>imgscalr-lib</artifactId>
