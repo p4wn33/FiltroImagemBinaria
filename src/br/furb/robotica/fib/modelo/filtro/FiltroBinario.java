@@ -5,6 +5,10 @@ import java.awt.image.BufferedImage;
 
 import br.furb.robotica.fib.modelo.imagem.Imagem;
 
+/**
+ * Com base em: 
+ * http://stackoverflow.com/questions/14851049/how-to-convert-color-image-to-pure-black-and-white-image0-255-format
+ */
 public class FiltroBinario {
 
 	private static FiltroBinario instance;
