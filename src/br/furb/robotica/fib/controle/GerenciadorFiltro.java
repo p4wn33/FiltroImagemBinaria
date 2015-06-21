@@ -8,8 +8,8 @@ public class GerenciadorFiltro {
 	
 	public void executar(String caminho, int limiteBilateral, int intensidadeCorPreta){
 		Imagem.getInstance().carregarImagem(caminho);
-		Redimensionador.getInstance().redimensionar(Imagem.getInstance(), limiteBilateral);
-		FiltroBinario.getInstance().aplicarFiltro(Imagem.getInstance(), intensidadeCorPreta);
+		Redimensionador.getInstance().redimensionar(limiteBilateral);
+		FiltroBinario.getInstance().aplicarFiltro(intensidadeCorPreta);
 	}
 
 }

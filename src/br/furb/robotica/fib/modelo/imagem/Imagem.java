@@ -36,6 +36,10 @@ public class Imagem {
 		this.imagem = imagem;
 	}
 	
+	public File getArquivo(){
+		return this.arquivo;
+	}
+	
 	public void salvarImagemRedimensionada(){
 		String nomeArquivoOriginal = arquivo.getName();
 		String caminhoArquivoOriginal = arquivo.getParent();

@@ -15,7 +15,8 @@ public class Redimensionador {
 		return instance;
 	}
 	
-	public void redimensionar(Imagem img, int limiteBilateral){
+	public void redimensionar(int limiteBilateral){
+		Imagem img = Imagem.getInstance();
 		img.setImagem(Scalr.resize(img.getImagem(), Scalr.Method.AUTOMATIC, limiteBilateral, limiteBilateral));
 		img.salvarImagemRedimensionada();
 	}

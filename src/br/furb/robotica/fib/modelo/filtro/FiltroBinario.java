@@ -20,7 +20,8 @@ public class FiltroBinario {
 		return instance;
 	}
 
-	public void aplicarFiltro(Imagem img, int intensidadeCorPreta) {
+	public void aplicarFiltro(int intensidadeCorPreta) {
+		Imagem img = Imagem.getInstance();
 		BufferedImage binaria = new BufferedImage(img.getImagem().getWidth(),
 				img.getImagem().getHeight(), BufferedImage.TYPE_BYTE_BINARY);
 		int vermelho;
