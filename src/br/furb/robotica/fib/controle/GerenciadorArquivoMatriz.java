@@ -8,6 +8,7 @@ public class GerenciadorArquivoMatriz {
 	public void executar(String caminho){
 		int matriz[][] = TransformadorMatricial.getInstance().transformar();
 		PersistenciaArquivo.getInstance().gravarArquivoMatriz(caminho, matriz);
+		PersistenciaArquivo.getInstance().gravarArquivoClasseMatriz(caminho, matriz);
 	}
 
 }
